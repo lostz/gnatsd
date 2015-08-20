@@ -517,6 +517,16 @@ func (s *Server) AllClients() map[uint64]*client {
 	return s.clients
 }
 
+func (s *Server) AllClientsAddr() (addr []string) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	for _, client := range s.clients {
+		addr = append(addr, client.Addr())
+	}
+	return addr
+
+}
+
 // Addr will return the net.Addr object for the current listener.
 func (s *Server) Addr() net.Addr {
 	s.mu.Lock()
