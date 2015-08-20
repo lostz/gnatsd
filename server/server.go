@@ -511,6 +511,12 @@ func (s *Server) NumSubscriptions() uint32 {
 	return stats.NumSubs
 }
 
+func (s *Server) AllClients() map[uint64]*client {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	return s.clients
+}
+
 // Addr will return the net.Addr object for the current listener.
 func (s *Server) Addr() net.Addr {
 	s.mu.Lock()

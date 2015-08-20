@@ -59,6 +59,11 @@ func (c *client) String() (id string) {
 	return c.ncs
 }
 
+func (c *client) Addr() string {
+	return c.nc.RemoteAddr().String()
+
+}
+
 func (c *client) GetOpts() *clientOpts {
 	return &c.opts
 }
