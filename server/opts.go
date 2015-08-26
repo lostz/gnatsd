@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nats-io/gnatsd/conf"
+	"github.com/lostz/gnatsd/conf"
 )
 
 // Options block for gnatsd server.
