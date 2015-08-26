@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/nats-io/gnatsd/sublist"
+	"github.com/lostz/gnatsd/sublist"
 )
 
 // Snapshot this

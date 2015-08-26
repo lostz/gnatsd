@@ -12,8 +12,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/nats-io/gnatsd/hashmap"
-	"github.com/nats-io/gnatsd/sublist"
+	"github.com/lostz/gnatsd/hashmap"
+	"github.com/lostz/gnatsd/sublist"
 )
 
 const (

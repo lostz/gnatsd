@@ -18,7 +18,7 @@ import (
 	// Allow dynamic profiling.
 	_ "net/http/pprof"
 
-	"github.com/nats-io/gnatsd/sublist"
+	"github.com/lostz/gnatsd/sublist"
 )
 
 // Info is the information sent to clients to help them understand information

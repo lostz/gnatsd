@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nats-io/nats"
+	"github.com/lostz/nats"
 )
 
 func TestRouteConfig(t *testing.T) {

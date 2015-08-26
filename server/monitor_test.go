@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nats-io/nats"
+	"github.com/lostz/nats"
 )
 
 const CLIENT_PORT = 11224
